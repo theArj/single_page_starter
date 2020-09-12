@@ -1,0 +1,47 @@
+/* These styles get started */
+
+body {
+    /* Choose a font */
+    /* Set the size of the font */
+    /* Remove the margin from the body */
+    margin: 0;
+}
+
+/* Prevents the margins on the headings from 
+causing problems */
+nav, main > section {
+    overflow: auto;
+}
+
+main > section {
+    /* Give each section a minimum height that is 
+    the height of the window */
+    min-height: 100vh;
+}
+
+/* Give each section a different background color. 
+The id names are unique so styles here apply just 
+the section they name. */
+#nav {
+    background-color: #FF3B30;
+}
+
+#banner {
+    background-color: #26B63E;
+}
+
+#topic-1 {
+    background-color: #007AFF;
+}
+
+#topic-2 {
+    background-color: #5856D6;
+}
+
+#topic-3 {
+    background-color: #FF00BE;
+}
+
+#contact {
+    background-color: #FF9500;
+}
