@@ -49,7 +49,7 @@ nav ul a:hover {
 #whatisit {
     background-color: #8bb5e6;  
     background-size: auto;
-    display: flex;
+    display: flexbox;
     justify-content: space-evenly;
     
     align-items: center;
