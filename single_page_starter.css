@@ -120,7 +120,6 @@ body {
   #history {
     background-color: #37373d;
     background-image: url(images/Studer_Tape_Machine.jpg);
-    background-image: #37373d;
     background-size: cover;
     display: flex;
     justify-content: center;
