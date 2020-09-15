@@ -262,7 +262,7 @@ form button {
 
 .learn {
   width: auto;
-  font-size: auto;
+  font-size: 1em;
   margin: 1em 0;
   align-self: flex-end;
   padding: 0.5em 1em;
