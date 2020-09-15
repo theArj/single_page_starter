@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="html" lang="en-US">
   <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Link the stylesheet, followed by the title here. -->
     <link rel="stylesheet" href="single_page_starter.css" />
     <title>The Loudness War</title>
@@ -22,8 +24,8 @@
       <!-- Add sections here. -->
       <!-- First portion should just be a photo of the SSL console with the title,
       "What Is The Loudness War?" -->
-      <section id="title_section">
-        <div>
+      <section id="title_section" class="parallax">
+        <div data-aos="fade-left" data-aos-duration="6000">
           <h2>What is the Loudness War?</h2>
         </div>
       </section>
@@ -225,7 +227,7 @@
         <h2>More Resources on the Loudness War</h2>
         <ul>
           <!-- Insert first card here for the informative YouTube video on the Loudness War. -->
-          <li class="card">
+          <li class="card" data-aos="fade-left" data-aos-duration="6000">
             <!-- Try adding the following YouTube video to see if it can play in the card window. -->
             <!-- <iframe
                 width="auto"
@@ -246,13 +248,19 @@
               >
             </h3>
             <p>
-              Click the title above to watch a short, but informative video on
-              the Loudness War.
+              Click the Learn More button to watch a short, but informative
+              YouTube video on the Loudness War, along with examples.
             </p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=kL13b9hCYjc';">
+              Learn More
+            </button>
+              
+            </button>
+            <!-- <button class="learn">Learn More</button> -->
           </li>
           <!-- Insert second card here with a link for users to check the dyanmic range of their
           favorite albums. -->
-          <li class="card">
+          <li class="card" data-aos="fade-up" data-aos-duration="6000">
             <img
               src="images/Metallica_My_Apocalypse_waveform.jpg"
               alt="Wikipedia Loudness War Waveform Photo of Metallica 'My Apocalypse' Album"
@@ -263,12 +271,15 @@
               <a href="http://dr.loudness-war.info/">Dynamic Range DB</a>
             </h3>
             <p>
-              Click the title above to check how compressed your favorite albums
-              are at the Dynamic Range Database.
+              Click the Learn More button to check how compressed your favorite
+              albums are at the Dynamic Range Database.
             </p>
+            <button onclick="window.location.href='http://dr.loudness-war.info/';">
+              Learn More
+            </button>
           </li>
           <!-- Insert third card here for TapeOp magainze article. -->
-          <li class="card">
+          <li class="card" data-aos="fade-right" data-aos-duration="6000">
             <img
               src="images/TapeOp_Logo.jpg"
               alt="TapeOp Magazine Logo"
@@ -281,18 +292,21 @@
               >
             </h3>
             <p>
-              Click the title above to read more about the Loudness War from the
-              July/August 2018 digital issue of
+              Click the Learn More button to read more about the Loudness War
+              from the July/August 2018 digital issue of
               <a href="https://tapeop.com/"><em>TapeOp</em></a> magazine.
             </p>
+            <button onclick="window.location.href='https://tapeop.com/interviews/126/modern-loudness/';">
+              Learn More
+            </button>
           </li>
         </ul>
       </section>
 
       <!-- Insert the About the Author section here. -->
-      <section id="about">
+      <section id="about" class="parallax">
         <div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="10000">
             <h2>About the Author</h2>
             <p>
               Arjun Ramesh is a graduate of the
@@ -329,7 +343,7 @@
       <!-- Insert footer here with Contact boxes, requesting Name, Email, and Message and Send button. -->
       <footer id="contact">
         <h2>Contact Arj</h2>
-        <form>
+        <form data-aos="fade-left" data-aos-duration="6000">
           <div>
             <label>
               <span>Name</span>
@@ -352,4 +366,11 @@
       </footer>
     </main>
   </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize Animate On Scroll
+    AOS.init();
+  </script>
 </html>
